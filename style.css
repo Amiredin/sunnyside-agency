@@ -1,0 +1,519 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Soft-red: hsl(7, 99%, 70%);
+  --Yellow: hsl(51, 100%, 49%);
+  --Dark-desaturatedcyan: hsl(167, 40%, 24%); /*(graphic design text) */
+  --Dark-blue: hsl(198, 62%, 26%); /*(photography text)*/
+  --Dark-moderate-cyan: hsl(168, 34%, 41%); /*(footer)*/
+  --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+  --Very-dark-grayish-blue: hsl(213, 9%, 39%);
+  --Dark-grayish-blue: hsl(232, 10%, 55%);
+  --Grayish-blue: hsl(210, 4%, 67%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Epilogue", sans-serif;
+  font-family: "Fraunces", serif;
+}
+
+.header {
+  background-color: blue;
+  height: 80vh;
+  min-height: 600px;
+  background-image: url(./images/desktop/image-header.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.nav_items {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+}
+
+.nav_items a {
+  text-decoration: none;
+  color: var(--White);
+  font-family: "Barlow", sans-serif;
+}
+.nav_items a:hover,
+.nav_item a:active {
+  color: var(--Dark-blue);
+}
+
+.cta-btn {
+  font: inherit;
+  background-color: var(--White);
+  padding: 0.7rem;
+  border-radius: 900px;
+  border: none;
+  font-size: small;
+  width: 100px;
+  cursor: pointer;
+}
+
+.cta-btn:hover,
+.cta-btn:active {
+  background-color: var(--Dark-blue);
+  color: var(--White);
+}
+
+.header-content h1 {
+  margin-top: 4rem;
+  text-align: center;
+  color: white;
+  font-family: "Fraunces", serif;
+  letter-spacing: 5px;
+  font-size: 3rem;
+}
+
+.arrow {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+}
+.transform,
+.stand-out {
+  display: flex;
+}
+
+.transform-desc,
+.stand-out-desc {
+  width: 88%;
+  padding: 5rem;
+  margin-top: 5rem;
+}
+
+.transform-desc h2,
+.stand-out-desc h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.transform-desc p,
+.stand-out-desc p {
+  font-size: medium;
+  color: var(--Very-dark-grayish-blue);
+  line-height: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.transform-desc a,
+.stand-out-desc a {
+  color: var(--Very-dark-desaturated-blue);
+  text-decoration: none;
+  font-weight: bolder;
+  border-bottom: 4px solid var(--Yellow);
+}
+
+.transform-img,
+.standout-img {
+  width: 100%;
+}
+
+.transform-img img,
+.standout-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.stand-out-desc a {
+  border-bottom: 4px solid var(--Soft-red);
+}
+
+.designs {
+  display: flex;
+  height: 600px;
+}
+
+.design-1,
+.design-2 {
+  width: 50%;
+  position: relative;
+}
+
+/* .design-desc {
+  background-color: aqua;
+} */
+
+.design-1 {
+  background-image: url(./images/desktop/image-graphic-design.jpg);
+  background-size: cover;
+  background-position: center top;
+}
+
+.design-2 {
+  background-image: url(./images/desktop/image-photography.jpg);
+  background-size: cover;
+  background-position: center top;
+}
+
+.design-desc {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--Dark-desaturatedcyan);
+  width: 60%;
+}
+
+.design-desc:nth-child(2) {
+  color: var(--Dark-blue);
+}
+
+.design-desc h2 {
+  margin-bottom: 2rem;
+}
+
+.design-desc p {
+  font-size: medium;
+  line-height: 1.5rem;
+}
+
+.testimonials {
+  width: 80%;
+  padding: 1rem;
+  margin: 3rem auto;
+  background-color: var(--White);
+}
+
+.testimonials-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.testimonials h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+  letter-spacing: 0.5rem;
+  color: var(--Grayish-blue);
+  font-size: medium;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+
+.testimonial p {
+  text-align: center;
+  line-height: 1.5rem;
+  margin-bottom: 3rem;
+  color: rgba(0, 0, 0, 0.658);
+  font-family: "Barlow", sans-serif;
+  font-size: medium;
+}
+
+.testimonial span {
+  margin-top: 1rem;
+  color: rgba(0, 0, 0, 0.281);
+  font-family: "Barlow", sans-serif;
+}
+
+.projects {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  gap: 0;
+  margin-top: 5rem;
+}
+
+.project-image1 {
+  width: 25%;
+  background-color: red;
+  background-image: url(./images/desktop/image-gallery-milkbottles.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+.project-image2 {
+  width: 25%;
+  background-image: url(./images/desktop/image-gallery-orange.jpg);
+
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+.project-image3 {
+  width: 25%;
+  background-image: url(./images/desktop/image-gallery-cone.jpg);
+
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+.project-image4 {
+  width: 25%;
+  background-image: url(./images/desktop/image-gallery-sugarcubes.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+.footer {
+  min-height: 300px;
+  background-color: hsl(168, 49%, 57%);
+  padding: 2rem;
+  color: var(--Dark-moderate-cyan);
+}
+
+footer h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.footer_nav-items {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+.footer_nav-items a {
+  text-decoration: none;
+  color: var(--Dark-moderate-cyan);
+  font-family: "Barlow", sans-serif;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.hamburger {
+  display: none;
+}
+
+.overlay {
+  position: fixed; /* Sit on top of the page content */
+  /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 400px) {
+  .container {
+    position: relative;
+    overflow-y: hidden;
+    width: 100%;
+  }
+  .hamburger {
+    display: block;
+  }
+  .mobile-nav {
+    position: fixed;
+    background-color: rgba(135, 207, 235, 0.911);
+    width: 70%;
+    height: 100vh;
+    justify-content: space-between;
+    top: 0;
+    z-index: 3;
+    margin-top: 0;
+  }
+
+  .mobile-main-nav {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 3rem;
+  }
+  .mobile-nav_items {
+    list-style: none;
+  }
+
+  .mobile-nav_item a {
+    text-decoration: none;
+    color: var(--White);
+    font-family: "Barlow", sans-serif;
+  }
+
+  .mobile-nav_item a:hover,
+  .mobile-nav_item a:active {
+    color: var(--Dark-blue);
+  }
+
+  .mobile-cta-btn {
+    font: inherit;
+    background-color: var(--White);
+    padding: 1rem;
+    border-radius: 900px;
+    border: none;
+    font-size: 1.5rem;
+    width: 100%;
+  }
+
+  .mobile-cta-btn:hover,
+  .mobile-cta-btn:active {
+    background-color: var(--Dark-blue);
+    color: var(--White);
+  }
+  .main-nav {
+    display: none;
+  }
+  .cta-btn {
+    display: none;
+  }
+  .header {
+    margin-top: 0 !important;
+    background-image: url(./images/mobile/image-header.jpg);
+  }
+  .arrow {
+    margin-top: 10px;
+  }
+
+  .transform,
+  .stand-out {
+    display: grid;
+  }
+
+  .transform-desc,
+  .stand-out-desc {
+    width: 90%;
+    padding: 0;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .transform-desc h2,
+  .stand-out-desc h2 {
+    font-size: 2rem;
+  }
+
+  .transform-desc p,
+  .stand-out-desc p {
+    font-size: small;
+  }
+
+  .transform-img,
+  .standout-img {
+    width: 100%;
+  }
+
+  .transform-img {
+    grid-row: 1;
+  }
+  .transform-img img,
+  .standout-img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .designs {
+    display: grid;
+
+    height: 1200px;
+  }
+
+  .design-1,
+  .design-2 {
+    width: 100%;
+  }
+
+  .design-1 {
+    background-image: url(./images/mobile/image-graphic-design.jpg);
+  }
+
+  .design-2 {
+    background-image: url(./images/mobile/image-photography.jpg);
+  }
+
+  .testimonials {
+    width: 100%;
+  }
+
+  .testimonials-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .projects {
+    flex-wrap: wrap;
+  }
+  .project-image1 {
+    width: 50%;
+    background-color: red;
+    background-image: url(./images/mobile/image-gallery-milkbottles.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+  }
+
+  .project-image2 {
+    width: 50%;
+    background-image: url(./images/mobile/image-gallery-orange.jpg);
+
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+  }
+  .project-image3 {
+    width: 50%;
+    background-image: url(./images/mobile/image-gallery-cone.jpg);
+
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+  }
+  .project-image4 {
+    width: 50%;
+    background-image: url(./images/mobile/image-gallery-sugar-cubes.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+  }
+  .footer {
+    min-height: 200px;
+  }
+}
